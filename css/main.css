@@ -2,20 +2,92 @@
 @import './components/font-awesome.min.css';
 @import './components/button.css';
 
+:root {
+    --primary-color: #ff5e61;
+}
+
 body {
     display: flex;
     height: 100vh;
     flex-direction: column;
     gap: 30px;
+    padding-top: 20px;
     justify-content: flex-start;
     align-items: center;
 }
 
 .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
     width: 100%;
-    background-color: yellow;
+}
+.container > *:first-child {
+    margin-right: auto;
+}
+.logo {
+    /* height: 60px; */
+}
+.menu {
+    display: flex;
+    gap: 20px;
+}
+.menu > a {
+    color: #000;
+    text-decoration: none;
+}
+.menu > a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
+.icons {
+    display: flex;
+    gap: 20px;
+}
+.icons > a {
+    color: #000;
+    text-decoration: none;
+}
+.icons > a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.gallery {
+    width: 60%;
+    padding: 0 0.7em;
+    position: relative;
+    font-size: 40px;
+}
+.gallery > img {
+    width: 100%;
+}
+.gallery > .fa {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.4pem;
+    text-align: center;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+.gallery > .fa-angle-left {
+    left: 0%;
+    padding-right: 0.17em;
+    transform: translateX(-50%);
+}
+.gallery > .fa-angle-right {
+    right: 0%;
+    padding-left: 0.17em;
+    transform: translateX(50%);
+}
+.text {
+    width: 40%;
+}
 @media (min-width: 480px) {
     .container {
         width: 360px;

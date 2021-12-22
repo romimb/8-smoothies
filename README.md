@@ -4,18 +4,16 @@
 
 This project is for **educational** porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://romimb.github.io/6-comming-soon/
+Site published at: https://romimb.github.io/8-smoothies/
 
-Design: [Coming soon](https://discord.com/channels/571393319201144843/850245533838868480/850246477053952051)
+Design: [Smoothie](https://cdn.discordapp.com/attachments/850245533838868480/850247344464592906/unknown.png)
 
 ## Project features
 
--   HTML form
--   CSS background images
--   Github pages
--   CSS animation
--   FontAwesome icons
 -   Responsive design
+-   Github pages
+-   FontAwesome icons
+-   CSS flex
 
 ## Authors
 
