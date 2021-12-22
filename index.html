@@ -5,26 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Smoothies</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <header class="container">
+    <header class="container menu-visible">
+        <!-- <header class="container"> -->
         <img src="./img/logo.png" alt="Logo" class="logo">
-        <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Smoothies</a>
-            <a href="#">Contact us</a>
-        </nav>
-        <nav class="icons">
-            <a href="#" class="fa fa-shopping-bag"></a>
-            <a href="#" class="fa fa-search"></a>
-        </nav>
+        <div class="main-menu">
+            <nav class="menu">
+                <a href="#">Home</a>
+                <a href="#">Smoothies</a>
+                <a href="#">Contact us</a>
+            </nav>
+            <nav class="menu">
+                <a href="#" class="fa fa-shopping-basket"></a>
+                <a href="#" class="fa fa-search"></a>
+            </nav>
+        </div>
+        <i class="fa fa-bars hamburger"></i>
     </header>
     <main class="container">
         <div class="gallery">
-            <img src="./img/drink.png" alt="Drink">
+            <picture>
+                <source media="(max-width: 799px)" srcset="./img/drink-mobile.png">
+                <source media="(min-width: 800px)" srcset="./img/drink.png">
+                <img src="./img/drink.png" alt="Drink">
+            </picture>
             <i class="fa fa-angle-left"></i>
             <i class="fa fa-angle-right"></i>
         </div>
